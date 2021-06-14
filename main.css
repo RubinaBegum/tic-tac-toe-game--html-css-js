@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    border: 1px solid rgba(0, 0, 0, 0.924);
+    width: 500px;
+    height: 500px;
+    font-family: sans-serif;
+    font-weight: italic;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+        margin-top: auto;
+    justify-content: normal;
+    align-content: flex-end;
+    margin-top: 171px;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background: green;
+}
+
+.header > * {
+    color:black;
+}
+
+.header__turn {
+    padding: 12px;
+}
+
+.header__status {
+    padding: 12px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header__restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: #8f551e;
+    background: yellowgreen;
+    cursor: pointer;
+}
+
+.board {
+    display: grid;
+    background: rgb(207, 147, 207);
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.board__tile {
+    background:yellowgreen;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: cursive;
+    color: #222222;
+}
+
+.board__tile:hover {
+    background-color: #eeeeee;
+    background-image: pink,yellow,bluwe,red;
+    color: yellowgreen;
+
+}
+
+.board__tile--winner {
+    color: green;
+ 
+}
